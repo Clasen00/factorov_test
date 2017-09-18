@@ -1,0 +1,33 @@
+@font-face {
+  font-family: CourierNewRegular; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  background-color: #797979;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center; }
+
+.content {
+  background: url(/img/background.jpg);
+  min-height: 100%;
+  width: 86%; }
+
+.content_title {
+  width: 100%;
+  padding-top: 6em;
+  text-align: center; }
+
+.content_title h1 {
+  font: bold 5em CourierNewRegular;
+  color: #673d1c; }
