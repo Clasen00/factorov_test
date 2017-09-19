@@ -1,26 +1,6 @@
-@import "compass/css3";
-@mixin underline($pos, $width, $color:rgba(0, 0, 0, 1), $bg:rgb(0, 0, 0)) {
-    @include background-image(linear-gradient(top, rgba($background, 0) $pos, $color $pos, $color $pos+$width, rgba($background, 0) $pos+$width));
-    display: inline-block;
-    background-size: 2px 2em;
-    background-repeat: repeat-x;
-    /* Set your wanted text-shadow here */
-    text-shadow: 2px 2px 0px $background, 2px -2px 0px $background, -2px 2px 0px $background, -2px -2px 0px $background, 0px 2px 0px $background, 0px -2px 0px $background;
-}
-
+$fendersblue: #41221c;
 $title-color: #673d1c;
-
-/* textcolor */
-
-$tcolor: rgba(35, 35, 35, 0.8);
-
-/* underline color */
-
-$uline: rgba(255, 255, 255, 1);
-
-/* background color */
-
-$background: rgba(41, 128, 185, 1.0);
+$link-color: rgba(105, 105, 105, 0.75);
 @font-face {
     font-family: CourierNewRegular;
     font-family: SansBold;
@@ -42,7 +22,7 @@ body {
     background-color: #797979;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -66,28 +46,62 @@ body {
 .content-personal-data {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
     .content-personal-data_item {
-        font-size: 1.3em;
         display: inline-flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-content: center;
+        flex-wrap: wrap;
         align-items: center;
         p {
-            margin-right: 1em;
+            padding-top: 31px;
+            padding-right: 20px;
             font-family: SansBold;
-            margin: 0.5em;
+            font-size: 1.3em;
         }
         span {
             font-family: CourierNewRegular;
-            font-size: 1em;
+            font-size: 25pt;
+            font-weight: 200;
         }
     }
 }
 
 .underline {
-    @include underline(1.15em, 0.04em, $uline, $background);
+    display: inline;
+    border-bottom: 3px solid darken($fendersblue, 10);
+    width: 100%;
+}
+
+.underline:after,
+.underline:before {
+    content: "";
+    display: block;
+}
+
+.content-link a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active,
+a:hover {
+    color: $link-color;
+}
+
+.content-data-wrapp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.checkbox-layot_tittle {}
+
+.content-checkbox-layot {
+
 }
