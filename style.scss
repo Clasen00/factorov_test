@@ -1,4 +1,26 @@
+@import "compass/css3";
+@mixin underline($pos, $width, $color:rgba(0, 0, 0, 1), $bg:rgb(0, 0, 0)) {
+    @include background-image(linear-gradient(top, rgba($background, 0) $pos, $color $pos, $color $pos+$width, rgba($background, 0) $pos+$width));
+    display: inline-block;
+    background-size: 2px 2em;
+    background-repeat: repeat-x;
+    /* Set your wanted text-shadow here */
+    text-shadow: 2px 2px 0px $background, 2px -2px 0px $background, -2px 2px 0px $background, -2px -2px 0px $background, 0px 2px 0px $background, 0px -2px 0px $background;
+}
+
 $title-color: #673d1c;
+
+/* textcolor */
+
+$tcolor: rgba(35, 35, 35, 0.8);
+
+/* underline color */
+
+$uline: rgba(255, 255, 255, 1);
+
+/* background color */
+
+$background: rgba(41, 128, 185, 1.0);
 @font-face {
     font-family: CourierNewRegular;
     font-family: SansBold;
@@ -64,4 +86,8 @@ body {
             font-size: 1em;
         }
     }
+}
+
+.underline {
+    @include underline(1.15em, 0.04em, $uline, $background);
 }
