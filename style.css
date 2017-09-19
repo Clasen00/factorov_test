@@ -1,5 +1,8 @@
 @font-face {
-  font-family: CourierNewRegular; }
+  font-family: CourierNewRegular;
+  font-family: SansBold;
+  src: url(fonts/PTSansRegular.ttf);
+  src: url(fonts/PTSansBold.ttf); }
 
 * {
   margin: 0px;
@@ -14,8 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
-  align-content: flex-start;
   align-items: center; }
 
 .content {
@@ -26,8 +27,29 @@ body {
 .content_title {
   width: 100%;
   padding-top: 6em;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 2em; }
+  .content_title h1 {
+    font: bold 5em CourierNewRegular;
+    color: #673d1c; }
 
-.content_title h1 {
-  font: bold 5em CourierNewRegular;
-  color: #673d1c; }
+.content-personal-data {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center; }
+  .content-personal-data .content-personal-data_item {
+    font-size: 1.3em;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center; }
+    .content-personal-data .content-personal-data_item p {
+      margin-right: 1em;
+      font-family: SansBold;
+      margin: 0.5em; }
+    .content-personal-data .content-personal-data_item span {
+      font-family: CourierNewRegular;
+      font-size: 1em; }
