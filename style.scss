@@ -1,8 +1,8 @@
 $fendersblue: #41221c;
 $title-color: #673d1c;
-$link-color: rgba(105, 105, 105, 0.75);
+$link-color: rgba(92, 92, 92, 0.84);
 @font-face {
-    font-family: CourierNewRegular;
+    font-family: PTSansRegular;
     font-family: SansBold;
     src: url(fonts/PTSansRegular.ttf);
     src: url(fonts/PTSansBold.ttf);
@@ -27,7 +27,7 @@ body {
 }
 
 .content {
-    background: url(/img/background.jpg);
+    background: url(img/background.jpg);
     min-height: 100%;
     width: 86%;
 }
@@ -38,7 +38,7 @@ body {
     text-align: center;
     padding-bottom: 2em;
     h1 {
-        font: bold 5em CourierNewRegular;
+        font: bold 5em PTSansRegular;
         color: $title-color;
     }
 }
@@ -62,7 +62,7 @@ body {
             font-size: 1.3em;
         }
         span {
-            font-family: CourierNewRegular;
+            font-family: PTSansRegular;
             font-size: 25pt;
             font-weight: 200;
         }
@@ -100,8 +100,25 @@ a:hover {
     align-items: center;
 }
 
-.checkbox-layot_tittle {}
+.checkbox-layot_tittle {
+    h3 {
+        text-align: left;
+        font-family: SansBold;
+        font-size: 1.4em;
+    }
+}
 
 .content-checkbox-layot {
+    margin-top: 5%;
+    max-width: 600px;
+}
 
+.checkbox-undertext p {
+    font-family: PTSansRegular;
+    font-size: 1em;
+    color: $link-color;
+}
+
+.content-checkbox-box {
+    margin-top: 1em;
 }
