@@ -130,14 +130,21 @@ a:hover {
 }
 
 .content-checkbox-box__wrap {
-        display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .content-runner {
     margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.checkbox-divison {
+    font-family: SansBold;
+    font-size: 1em;
+    text-align: left;
 }

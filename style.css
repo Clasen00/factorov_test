@@ -108,7 +108,15 @@ a:hover {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
-  align-items: center; }
+  align-items: flex-start; }
 
 .content-runner {
-  margin-top: 2em; }
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.checkbox-divison {
+  font-family: SansBold;
+  font-size: 1em;
+  text-align: left; }
+  .checkbox-divison input + input {
+    padding: 2em; }
