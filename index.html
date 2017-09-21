@@ -82,13 +82,21 @@
                         <h3>Уровень владения JavaScript</h3>
                     </div>
                     <div class="content-range-slider">
-                        <input type="range" min="0" max="4" range="1" class="range-slider__input" list="range-list">
-                        <datalist id="range-list">
+
+                        <form>
+                            <input id="range" type="range" value="0" min="0" max="4" list="ticks" class="range-slider__input">
+                            <label id="label">
+                        <output id="output" for="range">
+                            
+                        </output> 
+                        </label>
+                            <datalist id="ticks">
                             <option value="Не владею"></option>
                             <option value="Использую готовые решения"></option>
                             <option value="Использую готовые решения и умею их переделывать"></option>
                             <option value="Пишу сложный JS с нуля"></option>
                         </datalist>
+                        </form>
                     </div>
                     <div class="checkbox-layot_tittle">
                         <h3>Расскажите о себе словами</h3>
@@ -125,22 +133,30 @@
                         <p>Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
                     </div>
                     <div class="content-range-slider radiobox">
-
-                        <div class="content-radiobuttons-box">
-                            <input type="radio">Верстать
-                            <input type="radio">Прокачиваться в JS
-                        </div>
-                        <div class="content-radiobuttons-box">
-                            <input type="radio">Менеджерство
-                            <input type="radio">Другое
-                        </div>
-
+                        <form action="">
+                            <div class="content-radiobuttons-box">
+                                <input type="radio" name="wishes" value="Верстать">Верстать
+                                <input type="radio" name="wishes" value="Прокачиваться в JS" checked>Прокачиваться в JS
+                            </div>
+                            <div class="content-radiobuttons-box">
+                                <input type="radio" name="wishes" value="Менеджмент">Менеджерство
+                                <input type="radio" name="wishes" value="Other">Другое
+                            </div>
+                        </form>
+                    </div>
+                    <div class="underline">
+                        <form>
+                            <p class="checkbox-layot_tittle">Дата заполнения</p>
+                            <input type="date" name="date" value="2017-09-22">
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen, print" />
+    <script src="main.js"></script>
 </body>
-<link rel="stylesheet" href="style.css" type="text/css" media="screen, print" />
 
 </html>
