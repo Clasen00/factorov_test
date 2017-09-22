@@ -29,8 +29,14 @@ body {
     height: 100%;
 }
 
+.content,
+.content-data-wrapp,
+input[type='checkbox'],
+input[type="date"] {
+    background: url("img/background.jpg");
+}
+
 .content {
-    background: url(img/background.jpg);
     min-height: 100%;
     position: relative;
     width: 86%;
@@ -108,7 +114,6 @@ a:hover {
     justify-content: center;
     align-content: center;
     align-items: center;
-    background: url(img/background.jpg);
 }
 
 .checkbox-layot_tittle {
@@ -210,13 +215,10 @@ input[type='checkbox']:checked {
 
 //https://codepen.io/sandrojohanides/pen/BLWLbR?depth=everything&limit=all&order=popularity&page=17&q=Range+Slider&show_forks=false
 input[type='range'] {
-    position: relative;
     cursor: pointer;
     height: 10px;
-    width: calc(100% + 14px);
-    margin: 0 -7px;
     -webkit-appearance: none;
-    background-color: hsl(200, 100%, 40%);
+    background-color: hsla(0, 0%, 0%, 0.62);
     width: 100%;
 }
 
@@ -302,15 +304,28 @@ label {
     pointer-events: none;
     position: absolute;
     bottom: 100%;
-    /*    width: 100%;*/
     margin-bottom: 0.75rem;
     font-family: monospace;
     font-size: 1.5rem;
     text-align: center;
 }
 
-.someclass {
-    p {
-        font-family: PTSansRegular;
-    }
+input[type="date"] {
+    border-bottom: 3px solid darken($fendersblue, 10);
+    line-height: 1em;
+    font-size: 1.5em;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+.date-span {
+    font-family: sansBold;
+    font-size: 1em;
+}
+
+#date1 {}
+
+.content-date-label {
+    margin-bottom: 2em;
 }
