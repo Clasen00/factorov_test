@@ -84,18 +84,9 @@
                     <div class="content-range-slider">
 
                         <form>
-                            <input id="range" type="range" value="0" min="0" max="4" list="ticks" class="range-slider__input">
-                            <label id="label">
-                        <output id="output" for="range">
-                            
-                        </output> 
-                        </label>
-                            <datalist id="ticks">
-                            <option value="Не владею"></option>
-                            <option value="Использую готовые решения"></option>
-                            <option value="Использую готовые решения и умею их переделывать"></option>
-                            <option value="Пишу сложный JS с нуля"></option>
-                        </datalist>
+                            <input id="range" type="range" name="range" min="0" max="0" class="range-slider__input" step="1" value="не умею">
+                            <output name="result" class="date-span">Использую готовые решения
+                                  </output>
                         </form>
                     </div>
                     <div class="checkbox-layot_tittle">
@@ -145,7 +136,7 @@
                         </form>
                     </div>
                     <div>
-                        <form>
+                        <form class="content-date-label">
                             <label for="date1"></label><span class="date-span">Дата заполнения
                             <input type="date" name="date" value="2017-09-22" id="date1"></span>
                         </form>
